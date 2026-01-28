@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Apps Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #003222 0%, #005544 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .welcome {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .apps-section {
+            margin-top: 4rem;
+        }
+
+        .apps-title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .app-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 300px;
+            margin: 0 auto;
+            transition: transform 0.3s, background 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .app-logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #00ff88 0%, #00cc66 100%);
+            border-radius: 20px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .app-name {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .welcome {
+                font-size: 1.1rem;
+            }
+
+            .apps-title {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="welcome">Welcome to</p>
+        <h1>Simple Apps Studio</h1>
+
+        <div class="apps-section">
+            <p class="apps-title">Check our apps out</p>
+            <div class="app-card">
+                <div class="app-logo">📊</div>
+                <h3 class="app-name">QuickEstimate AI</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
